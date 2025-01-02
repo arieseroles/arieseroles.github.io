@@ -84,6 +84,8 @@ publication_category:
     title: 'Conference Papers'
   academic_papers:
     title: 'Academic Papers'
+  presentations:
+    title: 'Presentations'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
