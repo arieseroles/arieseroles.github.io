@@ -19,6 +19,7 @@ main:
         
   - title: "Substack"
     url: 'https://aeroles.substack.com/'
+    target: '_blank'
     
   - title: "CV"
     url: /cv/
