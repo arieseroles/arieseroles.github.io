@@ -13,7 +13,7 @@ title_separator          : "-"
 name                     : &name "Aries"
 description              : &description "personal description"
 url                      : https://arieseroles.github.io
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "https://arieseroles.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "arieseroles/arieseroles.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
