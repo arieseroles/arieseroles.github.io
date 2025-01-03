@@ -14,7 +14,7 @@ Hello! I am Aries and this is my personal page to share some of my works. I hope
 I was a seafarer for a short period as a cadet and officer onboard general cargo ships with usual trade in the East Asia and the eastern coast of South America (from Costa Rica to Chile). After that, I work as an instructor for my alma mater until the program was discontinued and the last batch completed their academic requirements. My last works typically is still in the area of maritime education and training with managerial roles in the later part.
 
 # Hobbies and interests
-======
+
 ## Reading
 
 I love reading newspapers (**in paper form**). (Especially with a good cup of coffee and, maybe, a slice of cake.) 
