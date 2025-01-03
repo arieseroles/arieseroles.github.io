@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**This github page is still in development.**
-
-Hello! I am Aries and this is my personal page to share some of my works. I hope to transition as an economist with interests in macroeconomics, labour economics, economic development and public policy.
+Hello! I am **Aries** and this is my personal page to share some of my works. I hope to transition as an economist with interests in macroeconomics, labour economics, economic development and public policy.
 
 I was a seafarer for a short period as a cadet and officer onboard general cargo ships with usual trade in the East Asia and the eastern coast of South America (from Costa Rica to Chile). After that, I work as an instructor for my alma mater until the program was discontinued and the last batch completed their academic requirements. My last works typically is still in the area of maritime education and training with managerial roles in the later part.
 
@@ -37,3 +35,7 @@ Here are some of the podcasts I listened to and recommend:
 3. <a href="https://open.spotify.com/show/4Gd9SbiUPhJWazNszp9izA?si=fd48a8c49d4341af" target="_blank">VoxTalks Economics</a>
 4. <a href="https://open.spotify.com/show/5CDLkuKhOKtxyCurWUMZd1?si=6f96aca68a69406e" target="_blank">The Howie Severino Podcast</a>
 5. <a href="https://open.spotify.com/show/5IGe8eJUebj8CMhQ3ygE8l?si=9b6dacf6ce334227" target="_blank">Muni-Muni Stories</a>
+
+# Work Experience
+
+(To be updated.)
