@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Aries Eroles"
   pronouns         : "he/his"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Aspiring economist"
   location         : "Philippines"
   employer         : #"Red Brick University"
   uri              : # URL
@@ -126,7 +126,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification : 023e33ba9bb522c3
+google_site_verification : 
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
