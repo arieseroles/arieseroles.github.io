@@ -9,7 +9,7 @@ redirect_from:
 
 Hello! I am **Aries** and this is my personal page to share some of my works. I hope to transition as an economist with interests in macroeconomics, labour economics, economic development and public policy.
 
-I was a seafarer for a short period as a cadet and officer onboard general cargo ships with usual trade in the East Asia and the eastern coast of South America (from Costa Rica to Chile). After that, I work as an instructor for my alma mater until the program was discontinued and the last batch completed their academic requirements. My last works typically is still in the area of maritime education and training with managerial roles in the later part.
+I was a seafarer for a short period as a cadet and officer onboard general cargo ships with usual trade in the East Asia and the eastern coast of South America (from Costa Rica to Chile). After that, I work as an instructor for my alma mater until the program was discontinued and the last batch completed their academic requirements. My last jobs are typically in the area of maritime education and training with managerial roles in the later part.
 
 # Hobbies and interests
 
