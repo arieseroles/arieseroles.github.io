@@ -15,7 +15,7 @@ I was a seafarer for a short period as a cadet and officer onboard general cargo
 
 ## Reading
 
-I love reading newspapers (**in paper form**). (Especially with a good cup of coffee and, maybe, a slice of cake.) 
+I love reading newspapers (<span style="color:red;">**in paper form**</span>). (Especially with a good cup of coffee and, maybe, a slice of cake.) 
 
 These days, I read mostly non-fiction. But I also read classics and young adult fiction. I try to review the books I read which you can find on my <a href="https://aeroles.substack.com/" target="_blank">Substack</a>.
 
@@ -38,4 +38,4 @@ Here are some of the podcasts I listened to and recommend:
 
 # Work Experience
 
-(To be updated.)
+(<span style="color:red;">To be updated.</span>)
