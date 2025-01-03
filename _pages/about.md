@@ -21,7 +21,7 @@ These days, I read mostly non-fiction. But I also read classics and young adult 
 
 ## Games
 
-I enjoyed playing <a href="https://www.paradoxinteractive.com/games/cities-skylines-ii/about" target="_blank">City Skylines 2</a> building cities (and districts) and detailing. On mobile, I play <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en&pli=1" target ="_blank">Class of Clans</a>.
+I enjoyed playing <a href="https://www.paradoxinteractive.com/games/cities-skylines-ii/about" target="_blank">City Skylines 2</a> building cities (and districts) and detailing. On mobile, I play <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en&pli=1" target ="_blank">Clash of Clans</a>.
 
 ## Music
 
