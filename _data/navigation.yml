@@ -10,3 +10,6 @@ main:
    
   - title: "Substack"
     url: /substack/
+
+  - title: "Course Design Manual"  # eBook on Course Design and Development
+    url: /_book/chapter-1.-introduction.html  # Path to Chapter 1
