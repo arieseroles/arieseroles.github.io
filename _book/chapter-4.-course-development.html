@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Chapter 4. Course Development | Course Design and Development Manual</title>
+  <meta name="description" content="4 Chapter 4. Course Development | Course Design and Development Manual" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Chapter 4. Course Development | Course Design and Development Manual" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Chapter 4. Course Development | Course Design and Development Manual" />
+  
+  
+  
+
+<meta name="author" content="Aries Eroles" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="chapter-3.-course-design.html"/>
+<link rel="next" href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"/>
+<script src="book_assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="book_assets/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="book_assets/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="book_assets/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html"><i class="fa fa-check"></i><b>1</b> Chapter 1. Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#definitions"><i class="fa fa-check"></i><b>1.1</b> 1.1. Definitions</a></li>
+<li class="chapter" data-level="1.2" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#responsibilities"><i class="fa fa-check"></i><b>1.2</b> 1.2 Responsibilities</a></li>
+<li class="chapter" data-level="1.3" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#storage-and-disposal-of-documents"><i class="fa fa-check"></i><b>1.3</b> 1.3. Storage and Disposal of Documents</a></li>
+<li class="chapter" data-level="1.4" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#review-and-revision"><i class="fa fa-check"></i><b>1.4</b> 1.4. Review and Revision</a></li>
+<li class="chapter" data-level="1.5" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#cross-references"><i class="fa fa-check"></i><b>1.5</b> Cross-references</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html"><i class="fa fa-check"></i><b>2</b> Chapter 2. Course Design and Development Process</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#purpose"><i class="fa fa-check"></i><b>2.1</b> 2.1. Purpose</a></li>
+<li class="chapter" data-level="2.2" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#conceptualising-a-course"><i class="fa fa-check"></i><b>2.2</b> 2.2. Conceptualising a Course</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#needs-analysis"><i class="fa fa-check"></i><b>2.2.1</b> Needs Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#phases-of-course-design-and-development"><i class="fa fa-check"></i><b>2.3</b> 2.3. Phases of Course Design and Development</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html"><i class="fa fa-check"></i><b>3</b> Chapter 3. Course Design</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#course-design-process"><i class="fa fa-check"></i><b>3.1</b> 3.1. Course Design Process</a></li>
+<li class="chapter" data-level="3.2" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#writing-the-training-outcome"><i class="fa fa-check"></i><b>3.2</b> 3.2 Writing the Training Outcome</a></li>
+<li class="chapter" data-level="3.3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#writing-the-learning-outcome"><i class="fa fa-check"></i><b>3.3</b> 3.3. Writing the Learning Outcome</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#anatomy-of-the-training-objective-and-learning-outcome"><i class="fa fa-check"></i><b>3.3.1</b> Anatomy of the training objective and learning outcome</a></li>
+<li class="chapter" data-level="3.3.2" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#verb-taxonomy"><i class="fa fa-check"></i><b>3.3.2</b> Verb taxonomy</a></li>
+<li class="chapter" data-level="3.3.3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#verbs-and-phrases-to-be-avoided"><i class="fa fa-check"></i><b>3.3.3</b> Verbs and phrases to be avoided</a></li>
+<li class="chapter" data-level="3.3.4" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#characteristics-of-a-good-learning-outcome"><i class="fa fa-check"></i><b>3.3.4</b> Characteristics of a good learning outcome</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html"><i class="fa fa-check"></i><b>4</b> Chapter 4. Course Development</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#development-of-the-course-plan"><i class="fa fa-check"></i><b>4.1</b> 4.1. Development of the Course Plan</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#course-framework"><i class="fa fa-check"></i><b>4.1.1</b> Course Framework</a></li>
+<li class="chapter" data-level="4.1.2" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#course-syllabus"><i class="fa fa-check"></i><b>4.1.2</b> Course Syllabus</a></li>
+<li class="chapter" data-level="4.1.3" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#instructors-guide"><i class="fa fa-check"></i><b>4.1.3</b> Instructor’s Guide</a></li>
+<li class="chapter" data-level="4.1.4" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#phases-of-instruction"><i class="fa fa-check"></i><b>4.1.4</b> Phases of instruction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#instructional-materials-design-and-development"><i class="fa fa-check"></i><b>4.2</b> 4.2. Instructional Materials Design and Development</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#powerpoint-presentation-as-an-instructional-material"><i class="fa fa-check"></i><b>4.2.1</b> PowerPoint presentation as an instructional material</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><i class="fa fa-check"></i><b>5</b> Chapter 5. Course Finalization, Implementation and Monitoring, and Evaluation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-finalization"><i class="fa fa-check"></i><b>5.1</b> 5.1. Course Finalization</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#review-by-the-sme"><i class="fa fa-check"></i><b>5.1.1</b> Review by the SME</a></li>
+<li class="chapter" data-level="5.1.2" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#pilot-testing"><i class="fa fa-check"></i><b>5.1.2</b> Pilot Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-implementation"><i class="fa fa-check"></i><b>5.2</b> 5.2. Course Implementation</a></li>
+<li class="chapter" data-level="5.3" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-monitoring"><i class="fa fa-check"></i><b>5.3</b> 5.3. Course Monitoring</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-monitoring-system"><i class="fa fa-check"></i><b>5.3.1</b> Course monitoring system</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#review-and-evaluation"><i class="fa fa-check"></i><b>5.4</b> 5.4. Review and Evaluation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Design and Development Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-4.-course-development" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Chapter 4. Course Development<a href="chapter-4.-course-development.html#chapter-4.-course-development" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The course development process is the actual authoring of the course package which contains the following:</p>
+<div class="float">
+<img src="img/course_package.png" alt="Contents of a course package" />
+<div class="figcaption">Contents of a course package</div>
+</div>
+<p>The course development phase is the most time consuming in the course design and development process involving a series of content creation and revision. It is therefore very important to carefully plan, execute and monitor the activities related to it.</p>
+<div class="float">
+<img src="img/course_dev_pm.png" alt="Project management for course development" />
+<div class="figcaption">Project management for course development</div>
+</div>
+<div class="float">
+<img src="img/course_dev_process.png" alt="Course development process flow" />
+<div class="figcaption">Course development process flow</div>
+</div>
+<div id="development-of-the-course-plan" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> 4.1. Development of the Course Plan<a href="chapter-4.-course-development.html#development-of-the-course-plan" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<blockquote>
+<p><strong>Important note:</strong></p>
+<p>Course designers and developers must be reminded to <strong>NOT</strong> “follow blindly” the IMO Model Course in designing and developing the courses. The primary objective of the model courses is to assist in the process. The course designers and developer are free to deviate from the model course as long the international (STCW Code) and national standards and the client’s requirements are met.</p>
+</blockquote>
+<div id="course-framework" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Course Framework<a href="chapter-4.-course-development.html#course-framework" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Course framework is the organised plan for the whole course. It outlines, among others, what the course contains, how it is going to teach and what is the mode of assessment.</p>
+<p>For courses requiring the approval of MARINA, the Course Framework is provided by them. Everything is copied in toto, except for the teaching facilities which must be tailored with what is existing in the Training Academy.</p>
+<table>
+<caption>Table 9. Elements of the course framework</caption>
+<colgroup>
+<col width="20%" />
+<col width="79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elements</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Scope</td>
+<td>Provides the extent of the topics or subject matter the course includes</td>
+</tr>
+<tr class="even">
+<td>Training outcome</td>
+<td>Outlines overall outcomes upon the completion of the training course or program</td>
+</tr>
+<tr class="odd">
+<td>Entry standards</td>
+<td>Provides the requirements for qualifications to be allowed to enrol in the course</td>
+</tr>
+<tr class="even">
+<td>Course certificate</td>
+<td>Describes the certificate the trainee will receive upon completion of the training course or program</td>
+</tr>
+<tr class="odd">
+<td>Course intake limitation</td>
+<td>Provides limitations of the number of trainees in one class</td>
+</tr>
+<tr class="even">
+<td>Staff requirements</td>
+<td>Outlines the requirements (minimum qualification) for instructors, assessors and supervisors</td>
+</tr>
+<tr class="odd">
+<td>Assessment</td>
+<td>Describe the modes of assessment and the grading scheme</td>
+</tr>
+<tr class="even">
+<td>Teaching facilities</td>
+<td>Outlines the needed facilities, equipment and materials for the course delivery and assessment</td>
+</tr>
+</tbody>
+</table>
+<div id="writing-a-good-course-scope" class="section level4 hasAnchor" number="4.1.1.1">
+<h4><span class="header-section-number">4.1.1.1</span> Writing a good Course Scope<a href="chapter-4.-course-development.html#writing-a-good-course-scope" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The scope includes the elements outlined below. It may be written in a compressed, single paragraph form or in multiple paragraphs provided that it is written clearly and concisely, providing each information in a single sentence, as possible.</p>
+<ul>
+<li><strong>Course content</strong>: 1. What is the content of the course? 2. What is the applicable STCW Table of competence and chapter?</li>
+<li><strong>Course delivery</strong>: How is the course delivered and what are the teaching-learning activities?</li>
+<li><strong>Learning objectives</strong>: What is the expected outcome of the course in relation to the work, career or professional development?</li>
+<li><strong>Assessment</strong>: What is mode of assessment?</li>
+</ul>
+</div>
+<div id="writing-an-assessment-description" class="section level4 hasAnchor" number="4.1.1.2">
+<h4><span class="header-section-number">4.1.1.2</span> Writing an assessment description<a href="chapter-4.-course-development.html#writing-an-assessment-description" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In writing assessment description in the course framework, the following must be taken into account:</p>
+<ul>
+<li>provides the mode and methods of assessment;</li>
+<li>clear and transparent; and</li>
+<li>incorporates column 4 of corresponding Table of competence in the STCW Code.</li>
+</ul>
+</div>
+<div id="course-outline-and-timetable" class="section level4 hasAnchor" number="4.1.1.3">
+<h4><span class="header-section-number">4.1.1.3</span> Course Outline and Timetable<a href="chapter-4.-course-development.html#course-outline-and-timetable" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Course outline provides the summary of topics contained in the course and their time allocation. For courses requiring the approval of MARINA, the course outline is already provided except for the time allocation of the assessment which is determined after the assessment design and development.</p>
+<p>Course timetable is the organisation of topics according to the order of the content delivery which includes:</p>
+<ul>
+<li>when the particular topic is to be delivered;</li>
+<li>when are exercises and other classroom tasks happen; and</li>
+<li>when the assessment takes place.</li>
+</ul>
+</div>
+</div>
+<div id="course-syllabus" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Course Syllabus<a href="chapter-4.-course-development.html#course-syllabus" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The course syllabus captures the learning outcomes of each topic as presented in the learning outcome. It must include the following:</p>
+<ul>
+<li>Topics and the learning outcomes;</li>
+<li>Reference or bibliography; and</li>
+<li>Teaching aid.</li>
+</ul>
+</div>
+<div id="instructors-guide" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Instructor’s Guide<a href="chapter-4.-course-development.html#instructors-guide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The primary objective of the Instructor’s Guide (IG) to aid the instructor in facilitating the course by providing the teaching and learning activities (TLA). The description of modes and methods of assessment “as”, “for” and “of” learning is also provided.</p>
+<p>Course designer and developer must be mindful that there are different methods and techniques for delivering the course in an effective and efficient manner. In writing the teaching and learning activities, the course developer must balance between too rigid instruction and deficient one. In other words, the IG must be specific but allows certain flexibility for the instructor.</p>
+<table style="width:100%;">
+<caption>Table 10. Writing the teaching and learning activity</caption>
+<colgroup>
+<col width="17%" />
+<col width="44%" />
+<col width="37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Deficient</th>
+<th>Balanced</th>
+<th>Too rigid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Lacks in detail or clarity; superficial entries</td>
+<td>Clear instructions but not too rigid to allow the instructor to employ his or her techniques to ensure effective learning</td>
+<td>The instructor is unable to adapt with the realities in the classroom – e.g. learner’s ability</td>
+</tr>
+<tr class="even">
+<td>Incomplete instructions</td>
+<td>The teaching and learning activity has a very clear, sequential steps for course delivery</td>
+<td>Contains many unnecessary details, especially not those not related to the teaching-learning activity</td>
+</tr>
+</tbody>
+</table>
+<div class="float">
+<img src="img/OBTL.png" alt="Outcomes-Based Teaching and Learning" />
+<div class="figcaption">Outcomes-Based Teaching and Learning</div>
+</div>
+</div>
+<div id="phases-of-instruction" class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Phases of instruction<a href="chapter-4.-course-development.html#phases-of-instruction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The IG must be planned and laid-out in a systematic and methodological manner to ensure that when carefully followed results into an effective and efficient teaching and learning. In developing the IG, either the three phases of instruction (<strong>IBC</strong> or <strong>ABC</strong>) or the ‘<strong>Gagné’s Nine Events of Instructions</strong>’ must be used – the comparison of which is outlined below.</p>
+<div id="ibcabc" class="section level4 hasAnchor" number="4.1.4.1">
+<h4><span class="header-section-number">4.1.4.1</span> IBC/ABC<a href="chapter-4.-course-development.html#ibcabc" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Introduction (Activation)</strong> - Establish the environment for learning by activating the interest of the trainees to the topic</li>
+<li><strong>Body</strong> - Facilitate the learning by using different methods and techniques for teaching and learning</li>
+<li><strong>Conclusion</strong> - Provide concluding activity</li>
+</ol>
+</div>
+<div id="gagnés-nine-events-of-instructions" class="section level4 hasAnchor" number="4.1.4.2">
+<h4><span class="header-section-number">4.1.4.2</span> Gagné’s Nine Events of Instructions<a href="chapter-4.-course-development.html#gagnés-nine-events-of-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Gain the attention of the trainees (students)</strong> - Presents stimulus for learning to ensure that trainees are prepared for learning</li>
+<li><strong>Inform the students of the objectives</strong> - State the learning outcomes (and, as appropriate, the assessment method)</li>
+<li><strong>Stimulate recall of prior learning</strong> - Facilitate recapitulation of prior learning and relate them to the succeeding discussion</li>
+<li><strong>Present the content</strong> - Present the topic using different methods and techniques to ensure effective learning</li>
+<li><strong>Provide learning guidance</strong> - Provide guidance for learning such as examples, case studies, concept mapping, etc.</li>
+<li><strong>Elicit performance (practice)</strong> - Allowing the trainees to process new knowledge and skills</li>
+<li><strong>Provide feedback</strong> - Provide immediate feedback</li>
+<li><strong>Assess performance</strong> - Conduct assessment (assessment ‘for’ and ‘as’ learning)</li>
+<li><strong>Enhance retention and transfer to the job</strong> - Provide concluding activity</li>
+</ol>
+<table>
+<caption>Table 11. Phases/events of instructions and the corresponding instructor’s actions</caption>
+<colgroup>
+<col width="38%" />
+<col width="61%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>IBC/ABC</th>
+<th>Gagné’s Nine Events of Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Introduction (Activation)</td>
+<td>1. Gain the attention of the trainees (students)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>2. Inform the students of the objectives</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>3. Stimulate recall of prior learning</td>
+</tr>
+<tr class="even">
+<td>2. Body</td>
+<td>4. Present the content</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>5. Provide learning guidance</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>6. Elicit performance (practice)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>7. Provide feedback</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>8. Assess performance</td>
+</tr>
+<tr class="odd">
+<td>3. Conclusion</td>
+<td>9. Enhance retention and transfer to the job</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="writing-on-how-to-start-a-lesson" class="section level4 hasAnchor" number="4.1.4.3">
+<h4><span class="header-section-number">4.1.4.3</span> Writing on how to start a lesson<a href="chapter-4.-course-development.html#writing-on-how-to-start-a-lesson" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In deciding for the teaching and learning activities for Introduction (Activation) or the first three of Gagné’s Nine Events of Instructions’ (GNEI), Table 11 below shall guide the course developer. The list is not exhaustive and non-exclusive. The course developer must, therefore, must <strong>NOT</strong> limit himself or herself with the activities outlined.</p>
+<table>
+<caption>Table 12. Activities for starting a lesson</caption>
+<colgroup>
+<col width="17%" />
+<col width="82%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Activities</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Suchman’s Inquiry</td>
+<td>The trainees are to ask questions answerable by YES or NO by the instructor that must lead into realisation about what the topic would be.</td>
+</tr>
+<tr class="even">
+<td>Recapitulation of prior learning</td>
+<td>Ask questions in order for the trainees to recall prior learning (alternatively, conduct diagnostic assessment); relate prior learning to the topic to be discussed</td>
+</tr>
+<tr class="odd">
+<td>Relate news (current events)</td>
+<td>Relate current events to the topic; Read a news story or show a news clip</td>
+</tr>
+<tr class="even">
+<td>Historical narrative</td>
+<td>Relate a chronological narrative that must trigger “why” or “how” it is so in relation to the topic to be discussed</td>
+</tr>
+<tr class="odd">
+<td>Outline</td>
+<td>Trainees is to create an outline in relation to the topic which is to be revisited at the end or near the end of the discussion</td>
+</tr>
+<tr class="even">
+<td>Post-It</td>
+<td>Use Post-It in asking the trainees examples, agree/disagree and other responses</td>
+</tr>
+<tr class="odd">
+<td>Pose a problem</td>
+<td>Pose a problem and ask the trainees how it might be solved; Do not provide the solution immediately; revisit the problem after the discussion</td>
+</tr>
+<tr class="even">
+<td>Word cloud/ vocabulary</td>
+<td>Present the terminologies that are related in the discussion</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="outcomes-based-teaching-and-learning-obtl-activities" class="section level4 hasAnchor" number="4.1.4.4">
+<h4><span class="header-section-number">4.1.4.4</span> Outcomes-Based Teaching and Learning (OBTL) Activities<a href="chapter-4.-course-development.html#outcomes-based-teaching-and-learning-obtl-activities" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The following must be taken into account in writing the middle phase (or phases, in case of using the GNEI method) or instruction.</p>
+<ul>
+<li><strong>Constructive alignment</strong> must be followed in deciding what activities to conduct during instruction taking into account, first, the learning outcomes, then, the assessment method/s.</li>
+<li>Activities must be appropriate based on the:
+<ul>
+<li>Content</li>
+<li>Type of learner</li>
+<li>Duration</li>
+<li>Availability of resources</li>
+</ul></li>
+<li>Activities must be learner-centred as opposed to being instructor-centred.</li>
+<li>Activities must aid the learning process. Otherwise, they are just waste of time.</li>
+</ul>
+<p>Below provides a useful guide in choosing the teaching and learning activity based on teaching and learning strategy. The list is not exhaustive and non-exclusive.</p>
+<table>
+<caption>Table 13. Teaching and learning activities by learning strategy</caption>
+<colgroup>
+<col width="54%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Checks for understanding</strong></td>
+<td>Background Knowledge Probe<br />
+Comparative Advance Organizer<br />
+Concept Review<br />
+Data Analysis<br />
+Defining Features Matrix<br />
+Index Card Match<br />
+One Minute Paper<br />
+Muddiest Point<br />
+Quiz Show<br />
+Think / Write / Pair / Share<br />
+Visible Quiz</td>
+</tr>
+<tr class="even">
+<td><strong>Classroom Assessment Technique (CAT)</strong></td>
+<td>Concept Review<br />
+Data Analysis<br />
+Index Card Match<br />
+One Minute Paper / Muddiest Point</td>
+</tr>
+<tr class="odd">
+<td><strong>Critical Thinking</strong></td>
+<td>Analytic Memo<br />
+Categorising Grid<br />
+Concept Map<br />
+Defining Features Matrix<br />
+Failure Analysis<br />
+Guided-Discovery Learning<br />
+Metacognition<br />
+Pro and Con Grid<br />
+Role Play<br />
+Six Thinking Hats</td>
+</tr>
+<tr class="even">
+<td><strong>Discussion</strong></td>
+<td>Class Discussion<br />
+Fishbowl<br />
+Pass a Problem<br />
+Pro and Con Grid<br />
+Rotating Trio<br />
+Round Table<br />
+Think / Write / Pair / Share<br />
+Six Thinking Hats</td>
+</tr>
+<tr class="odd">
+<td><strong>Problem-Based Learning</strong></td>
+<td>Activity Matrix<br />
+Barnga<br />
+Concept Map<br />
+Failure Analysis<br />
+Guided Discovery Learning<br />
+Jigsaw<br />
+Pass a Problem<br />
+Role Play</td>
+</tr>
+<tr class="even">
+<td><strong>Reflection/Debriefing</strong></td>
+<td>Concept Review<br />
+Round Table<br />
+What? So What? Now What?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="demonstration-based-and-simulation-based-training-dbt" class="section level4 hasAnchor" number="4.1.4.5">
+<h4><span class="header-section-number">4.1.4.5</span> Demonstration-based and simulation-based training (DBT)<a href="chapter-4.-course-development.html#demonstration-based-and-simulation-based-training-dbt" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Demonstration-based training must be incorporated in the overall design and development of the teaching and learning activity.</p>
+<div class="float">
+<img src="img/DBT.png" alt="DBT incorporated in the phases of instruction" />
+<div class="figcaption">DBT incorporated in the phases of instruction</div>
+</div>
+</div>
+</div>
+</div>
+<div id="instructional-materials-design-and-development" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> 4.2. Instructional Materials Design and Development<a href="chapter-4.-course-development.html#instructional-materials-design-and-development" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Instructional materials (IMs) that needs to be designed and developed include:</p>
+<ul>
+<li>Case studies</li>
+<li>Classroom activities – specific activities as indicated in the IG need to have an activity sheet detailing how the activity is to be conducted</li>
+<li>Handouts</li>
+<li>PowerPoint presentation or related material (Canva, Keynote, Prezi, Google Slides, etc.)</li>
+</ul>
+<p>Instructional materials to be used for instruction must be indicated in the IG. Other IMs not listed above include:</p>
+<ul>
+<li>Calculator</li>
+<li>Manuals</li>
+<li>Published diagrams, charts, posters, etc. (such as published by IMO and Maritime Progress Ltd.)</li>
+<li>Software Programs</li>
+<li>Tools and equipment</li>
+<li>Videos</li>
+</ul>
+<div id="powerpoint-presentation-as-an-instructional-material" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> PowerPoint presentation as an instructional material<a href="chapter-4.-course-development.html#powerpoint-presentation-as-an-instructional-material" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In designing and developing PPT presentation as instructional material, the following must be taken into account:</p>
+<ul>
+<li>The presentation must be designed and developed to AID the delivery and to ASSIST the instructor. It must NOT be the primary source of information making the instructor redundant. It must PREVENT the instructor from just reading the slides.This can be achieved by:
+<ul>
+<li>Avoiding text-dense slides. If the slides contained only texts, the general rule is to have 6 to 8 words per line and 4 to 6 lines per slide;</li>
+<li>Long text is only appropriate when including an excerpt (whether from law, historical narrative, news clippings, etc.);</li>
+</ul></li>
+<li>The content on the slides must be based on the LEARNING OUTCOMES.</li>
+<li>The slide must contain only ENOUGH STIMULUS for instruction. Content must be presented in a logical manner. A slide filled with unnecessary details especially if presented in illogical manner will lead the learner astray.</li>
+<li>Use emphasis to highlight important contents but do it in uniform, logical manner. Use italics, bold and colour. Avoid using underline.</li>
+<li>Use sans serif fonts such as Arial, Calibre, Tahoma and Segoe UI. Use only up to two font style. Acceptable serif fonts include Cambria and Book Antiqua. Avoid using fancy font style such as Comic Sans, Lucida Calligraphy and Vivaldi.</li>
+<li>Use animation and sound sparingly and only when necessary.</li>
+<li>When printed, the slide must not have overlapping content. The exception is when the slides is used EXCLUSIVELY for self-learning and animations and overlapping contents are necessary.</li>
+</ul>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-3.-course-design.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Chapter 3. Course Design | Course Design and Development Manual</title>
+  <meta name="description" content="3 Chapter 3. Course Design | Course Design and Development Manual" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Chapter 3. Course Design | Course Design and Development Manual" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Chapter 3. Course Design | Course Design and Development Manual" />
+  
+  
+  
+
+<meta name="author" content="Aries Eroles" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="chapter-2.-course-design-and-development-process.html"/>
+<link rel="next" href="chapter-4.-course-development.html"/>
+<script src="book_assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="book_assets/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="book_assets/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="book_assets/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html"><i class="fa fa-check"></i><b>1</b> Chapter 1. Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#definitions"><i class="fa fa-check"></i><b>1.1</b> 1.1. Definitions</a></li>
+<li class="chapter" data-level="1.2" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#responsibilities"><i class="fa fa-check"></i><b>1.2</b> 1.2 Responsibilities</a></li>
+<li class="chapter" data-level="1.3" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#storage-and-disposal-of-documents"><i class="fa fa-check"></i><b>1.3</b> 1.3. Storage and Disposal of Documents</a></li>
+<li class="chapter" data-level="1.4" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#review-and-revision"><i class="fa fa-check"></i><b>1.4</b> 1.4. Review and Revision</a></li>
+<li class="chapter" data-level="1.5" data-path="chapter-1.-introduction.html"><a href="chapter-1.-introduction.html#cross-references"><i class="fa fa-check"></i><b>1.5</b> Cross-references</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html"><i class="fa fa-check"></i><b>2</b> Chapter 2. Course Design and Development Process</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#purpose"><i class="fa fa-check"></i><b>2.1</b> 2.1. Purpose</a></li>
+<li class="chapter" data-level="2.2" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#conceptualising-a-course"><i class="fa fa-check"></i><b>2.2</b> 2.2. Conceptualising a Course</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#needs-analysis"><i class="fa fa-check"></i><b>2.2.1</b> Needs Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="chapter-2.-course-design-and-development-process.html"><a href="chapter-2.-course-design-and-development-process.html#phases-of-course-design-and-development"><i class="fa fa-check"></i><b>2.3</b> 2.3. Phases of Course Design and Development</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html"><i class="fa fa-check"></i><b>3</b> Chapter 3. Course Design</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#course-design-process"><i class="fa fa-check"></i><b>3.1</b> 3.1. Course Design Process</a></li>
+<li class="chapter" data-level="3.2" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#writing-the-training-outcome"><i class="fa fa-check"></i><b>3.2</b> 3.2 Writing the Training Outcome</a></li>
+<li class="chapter" data-level="3.3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#writing-the-learning-outcome"><i class="fa fa-check"></i><b>3.3</b> 3.3. Writing the Learning Outcome</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#anatomy-of-the-training-objective-and-learning-outcome"><i class="fa fa-check"></i><b>3.3.1</b> Anatomy of the training objective and learning outcome</a></li>
+<li class="chapter" data-level="3.3.2" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#verb-taxonomy"><i class="fa fa-check"></i><b>3.3.2</b> Verb taxonomy</a></li>
+<li class="chapter" data-level="3.3.3" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#verbs-and-phrases-to-be-avoided"><i class="fa fa-check"></i><b>3.3.3</b> Verbs and phrases to be avoided</a></li>
+<li class="chapter" data-level="3.3.4" data-path="chapter-3.-course-design.html"><a href="chapter-3.-course-design.html#characteristics-of-a-good-learning-outcome"><i class="fa fa-check"></i><b>3.3.4</b> Characteristics of a good learning outcome</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html"><i class="fa fa-check"></i><b>4</b> Chapter 4. Course Development</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#development-of-the-course-plan"><i class="fa fa-check"></i><b>4.1</b> 4.1. Development of the Course Plan</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#course-framework"><i class="fa fa-check"></i><b>4.1.1</b> Course Framework</a></li>
+<li class="chapter" data-level="4.1.2" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#course-syllabus"><i class="fa fa-check"></i><b>4.1.2</b> Course Syllabus</a></li>
+<li class="chapter" data-level="4.1.3" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#instructors-guide"><i class="fa fa-check"></i><b>4.1.3</b> Instructor’s Guide</a></li>
+<li class="chapter" data-level="4.1.4" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#phases-of-instruction"><i class="fa fa-check"></i><b>4.1.4</b> Phases of instruction</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#instructional-materials-design-and-development"><i class="fa fa-check"></i><b>4.2</b> 4.2. Instructional Materials Design and Development</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="chapter-4.-course-development.html"><a href="chapter-4.-course-development.html#powerpoint-presentation-as-an-instructional-material"><i class="fa fa-check"></i><b>4.2.1</b> PowerPoint presentation as an instructional material</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><i class="fa fa-check"></i><b>5</b> Chapter 5. Course Finalization, Implementation and Monitoring, and Evaluation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-finalization"><i class="fa fa-check"></i><b>5.1</b> 5.1. Course Finalization</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#review-by-the-sme"><i class="fa fa-check"></i><b>5.1.1</b> Review by the SME</a></li>
+<li class="chapter" data-level="5.1.2" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#pilot-testing"><i class="fa fa-check"></i><b>5.1.2</b> Pilot Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-implementation"><i class="fa fa-check"></i><b>5.2</b> 5.2. Course Implementation</a></li>
+<li class="chapter" data-level="5.3" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-monitoring"><i class="fa fa-check"></i><b>5.3</b> 5.3. Course Monitoring</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#course-monitoring-system"><i class="fa fa-check"></i><b>5.3.1</b> Course monitoring system</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html"><a href="chapter-5.-course-finalization-implementation-and-monitoring-and-evaluation.html#review-and-evaluation"><i class="fa fa-check"></i><b>5.4</b> 5.4. Review and Evaluation</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Design and Development Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chapter-3.-course-design" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Chapter 3. Course Design<a href="chapter-3.-course-design.html#chapter-3.-course-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="course-design-process" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> 3.1. Course Design Process<a href="chapter-3.-course-design.html#course-design-process" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The primary objective of the course design process is to lay out the foundation of course development process by a very effective training outcomes and learning outcomes that would define the effective teaching-learning activities and assessment activities.</p>
+<div class="float">
+<img src="img/course_design.png" alt="Course Design Process" />
+<div class="figcaption">Course Design Process</div>
+</div>
+<table>
+<caption>Table 5. Course design process</caption>
+<colgroup>
+<col width="34%" />
+<col width="65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Outputs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Needs Analysis National and international standards, as applicable Client’s specific requirements</td>
+<td>Training outcomes Training outcomes Learning outcomes Course outline (initial) Course timeline (initial) Description of teaching-learning activities Description of assessment activities</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="writing-the-training-outcome" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> 3.2 Writing the Training Outcome<a href="chapter-3.-course-design.html#writing-the-training-outcome" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The training outcome <strong>must</strong>:</p>
+<ul>
+<li>Define the overall outcome(s) upon completion of the training course or program;</li>
+<li>Describe to the trainees what they are going to learn throughout the course or program duration; and</li>
+<li>Clearly defined and focus on the observed activity.</li>
+</ul>
+</div>
+<div id="writing-the-learning-outcome" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> 3.3. Writing the Learning Outcome<a href="chapter-3.-course-design.html#writing-the-learning-outcome" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The learning outcome must:</p>
+<ul>
+<li>Reflect what the learner must be able to do from the topic discussion;</li>
+<li>Measurable and capable of being assessed;</li>
+<li>Learner-centric; and</li>
+<li>Derived from the training outcomes.</li>
+</ul>
+<div id="anatomy-of-the-training-objective-and-learning-outcome" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Anatomy of the training objective and learning outcome<a href="chapter-3.-course-design.html#anatomy-of-the-training-objective-and-learning-outcome" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Training objective and learning outcome must be constructed in the manner as shown below.</p>
+<div class="float">
+<img src="img/anatomy_outcome.png" alt="Anatomy of a training/course outcome" />
+<div class="figcaption">Anatomy of a training/course outcome</div>
+</div>
+<table>
+<caption>Table 6. Difference between training outcomes and learning outcomes</caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Training outcomes</th>
+<th>Learning outcomes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Overall outcomes upon completion of the training course or program</td>
+<td>Specific outcomes upon completion of the topic</td>
+</tr>
+<tr class="even">
+<td>Define assessment method and standards</td>
+<td>Define the assessment criteria</td>
+</tr>
+<tr class="odd">
+<td>Attainment is measured by summative assessment</td>
+<td>Attainment is measured by both formative and summative assessments</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="verb-taxonomy" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Verb taxonomy<a href="chapter-3.-course-design.html#verb-taxonomy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <em>taxonomy of verbs</em> refers to the classification thinking skills required to be demonstrated at the end of the teaching-learning activity (outcome). It is important during the design and development process that the verb used is appropriate to its taxonomy vis-à-vis the required competences, KUPs and other requirements as determined during the <strong>Needs Analysis</strong>.</p>
+<p>The following tables outline the verbs that can be used in constructing the training outcomes and learning outcomes. The list is not exhaustive; therefore, the course designer and developer must be warned of limiting himself or herself into them.</p>
+<table style="width:100%;">
+<caption>Table 7. Verb taxonomy</caption>
+<colgroup>
+<col width="13%" />
+<col width="69%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Order of thinking skills<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></th>
+<th>List of verbs</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Create</td>
+<td>assemble, construct, create, design, develop, generate, plan, prepare, write</td>
+<td>Produce new or original work</td>
+</tr>
+<tr class="even">
+<td>Evaluate</td>
+<td>appraise, argue, assess, criticise, describe, evaluate, explain, judge, interpret, relate</td>
+<td>Justify a stand or decision</td>
+</tr>
+<tr class="odd">
+<td>Analyze</td>
+<td>analyze, breakdown, calculate, compute, compare and contrast, differentiate, distinguish, identify, outline, relate, select, separate, solve</td>
+<td>Draw connection among ideas</td>
+</tr>
+<tr class="even">
+<td>Apply</td>
+<td>apply, calculate, compute, demonstrate, illustrate, interpret, manipulate, modify, operate, predict, prepare, produce, relate, sketch, solve, use, write</td>
+<td>Use information in new situations</td>
+</tr>
+<tr class="odd">
+<td>Understand</td>
+<td>classify, convert, describe, discuss, distinguish, explain, express, give examples, identity, locate, paraphrase, recognise, rewrite, select, summarise</td>
+<td>Explain ideas or concepts</td>
+</tr>
+<tr class="even">
+<td>Know</td>
+<td>arrange, choose, define, describe, identify, label, list, match, name, order, outline, relate, select</td>
+<td>Recall facts and basic concepts</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Table 8. Definition of verbs</caption>
+<colgroup>
+<col width="10%" />
+<col width="89%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Verb</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>analyze</td>
+<td>determine the nature and relationship of things</td>
+</tr>
+<tr class="even">
+<td>apply</td>
+<td>to put into effect or action the learned concepts, procedures, etc.</td>
+</tr>
+<tr class="odd">
+<td>appraise</td>
+<td>to judge the value, significance or status</td>
+</tr>
+<tr class="even">
+<td>argue</td>
+<td>to prove by citing reasons, pros and cons, etc.</td>
+</tr>
+<tr class="odd">
+<td>arrange</td>
+<td>put into proper order, sequence</td>
+</tr>
+<tr class="even">
+<td>assemble</td>
+<td>combine together the parts according to a defined instructions</td>
+</tr>
+<tr class="odd">
+<td>assess</td>
+<td>1. see appraise.; 2. determine the importance, size (e.g. assess the damage)</td>
+</tr>
+<tr class="even">
+<td>breakdown</td>
+<td>to break thing (including ideas or concepts) into parts</td>
+</tr>
+<tr class="odd">
+<td>calculate</td>
+<td><strong>Apply</strong>: provided with given values, use formula to solve a (likely mathematical) problem; <strong>Analyze</strong>: analyse a given situation and determine the steps and formulas in order to solve a problem</td>
+</tr>
+<tr class="even">
+<td>choose</td>
+<td>recall ideas or concepts to be able to choose among various options</td>
+</tr>
+<tr class="odd">
+<td>classify</td>
+<td>arrange things (including ideas and concepts) into groups of same characteristics or nature</td>
+</tr>
+<tr class="even">
+<td>compare and contrast</td>
+<td>cite the similarities (compare) and differences (contrast)</td>
+</tr>
+<tr class="odd">
+<td>compute</td>
+<td><em>Same with calculate</em>.</td>
+</tr>
+<tr class="even">
+<td>construct</td>
+<td>form a thing (including concepts) according to a defined criteria</td>
+</tr>
+<tr class="odd">
+<td>convert</td>
+<td>convert one unit to another given a conversion ratio</td>
+</tr>
+<tr class="even">
+<td>create</td>
+<td><em>Same with construct</em>.</td>
+</tr>
+<tr class="odd">
+<td>criticize</td>
+<td>judge a thing according to its merits and demerits</td>
+</tr>
+<tr class="even">
+<td>define</td>
+<td>recall learned concepts in order to give a definition</td>
+</tr>
+<tr class="odd">
+<td>demonstrate</td>
+<td>show the performance of something (<strong>Note</strong>: Avoid using “demonstrate knowledge and understanding”.)</td>
+</tr>
+<tr class="even">
+<td>describe</td>
+<td><strong>Understand</strong>: to represent or give account into words the characteristics of something; <strong>Evaluate</strong>: to give account of an observation leading to a decision</td>
+</tr>
+<tr class="odd">
+<td>design</td>
+<td>create a plan for creating or implementing something</td>
+</tr>
+<tr class="even">
+<td>develop</td>
+<td>create something out from a plan</td>
+</tr>
+<tr class="odd">
+<td>differentiate</td>
+<td>cite the differences of things in their elemental parts</td>
+</tr>
+<tr class="even">
+<td>discuss</td>
+<td><strong>Know</strong>: cite the concept or idea as discussed; <strong>Understand</strong>: cite the concept of idea in own words</td>
+</tr>
+<tr class="odd">
+<td>distinguish</td>
+<td>Same with differentiate.</td>
+</tr>
+<tr class="even">
+<td>evaluate</td>
+<td>Same with assess.</td>
+</tr>
+<tr class="odd">
+<td>explain</td>
+<td><strong>Understand</strong>: describe the concept in own words; <strong>Evaluate</strong>: describe the given situation by examining the various parts in order to give reason, make recommendations, etc.</td>
+</tr>
+<tr class="even">
+<td>express</td>
+<td>Same with express (Understand).</td>
+</tr>
+<tr class="odd">
+<td>generate</td>
+<td>Same with construct.</td>
+</tr>
+<tr class="even">
+<td>give examples</td>
+<td>cite specific situations or objects with similar characteristics</td>
+</tr>
+<tr class="odd">
+<td>identify</td>
+<td>establish the identity</td>
+</tr>
+<tr class="even">
+<td>illustrate</td>
+<td>draw diagrams, pictures etc. of a concept, idea or thing as discussed</td>
+</tr>
+<tr class="odd">
+<td>interpret</td>
+<td><strong>Apply</strong>: decode coded messages based on the established guidelines; <strong>Evaluate</strong>: examine the situation in order to determine the underlying conditions</td>
+</tr>
+<tr class="even">
+<td>judge</td>
+<td><em>Same with appraise</em>.</td>
+</tr>
+<tr class="odd">
+<td>label</td>
+<td>identify the parts by writing the name</td>
+</tr>
+<tr class="even">
+<td>list</td>
+<td>enumerate specific things or examples</td>
+</tr>
+<tr class="odd">
+<td>locate</td>
+<td>determine the location</td>
+</tr>
+<tr class="even">
+<td>manipulate</td>
+<td>to operate a machine</td>
+</tr>
+<tr class="odd">
+<td>match</td>
+<td>draw out the connection</td>
+</tr>
+<tr class="even">
+<td>modify</td>
+<td>change a condition based on the discussed concepts</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Same with give examples.</td>
+</tr>
+<tr class="even">
+<td>operate</td>
+<td>to cause something (especially a machine) to function</td>
+</tr>
+<tr class="odd">
+<td>order</td>
+<td>Same with arrange.</td>
+</tr>
+<tr class="even">
+<td>outline</td>
+<td><strong>Know</strong>: <em>Same with list</em>.; <strong>Analyse</strong>: determine the different parts or principal features</td>
+</tr>
+<tr class="odd">
+<td>paraphrase</td>
+<td><em>Same with describe</em> (<strong>Understand</strong>).</td>
+</tr>
+<tr class="even">
+<td>plan</td>
+<td>design actions to be carried out</td>
+</tr>
+<tr class="odd">
+<td>prepare</td>
+<td><strong>Apply</strong>: to make something ready based from an instruction or guideline; <strong>Create</strong>: (as in prepare a report) to put into writing</td>
+</tr>
+<tr class="even">
+<td>relate</td>
+<td><strong>Analyse</strong>: to establish the relationship based on the discussed concept; <strong>Evaluate</strong>: examine the condition in order to establish relationships</td>
+</tr>
+<tr class="odd">
+<td>rewrite</td>
+<td><em>Same with describe</em> (<strong>Understand</strong>).</td>
+</tr>
+<tr class="even">
+<td>select</td>
+<td><strong>Know</strong>: Same with choose.; <strong>Understand</strong>: choose from various options based on a given situation</td>
+</tr>
+<tr class="odd">
+<td>separate</td>
+<td>to make distinction</td>
+</tr>
+<tr class="even">
+<td>sketch</td>
+<td><em>Same with illustrate</em>.</td>
+</tr>
+<tr class="odd">
+<td>solve</td>
+<td><em>Same with calculate</em>.</td>
+</tr>
+<tr class="even">
+<td>summarise</td>
+<td><em>Same with describe</em> (<strong>Understand</strong>).</td>
+</tr>
+<tr class="odd">
+<td>use</td>
+<td><em>Same with manipulate</em>.</td>
+</tr>
+<tr class="even">
+<td>write</td>
+<td>to create in writing</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="verbs-and-phrases-to-be-avoided" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Verbs and phrases to be avoided<a href="chapter-3.-course-design.html#verbs-and-phrases-to-be-avoided" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The following verbs and phrases <strong>MUST NOT</strong> be used in constructing learning outcomes because they are vague, hard to measure, and or unobservable:</p>
+<ul>
+<li>Acquainted with</li>
+<li>Awareness of</li>
+<li>Be familiar with</li>
+<li>Capable of</li>
+<li>Comprehend</li>
+<li>Conceptualize</li>
+<li>Conscious of</li>
+<li>Experience</li>
+<li>Feel</li>
+<li>Knowledge of</li>
+<li>Knowledgeable about</li>
+<li>Memorize</li>
+<li>Realize</li>
+<li>Recognize</li>
+<li>Think</li>
+<li>Understand</li>
+</ul>
+</div>
+<div id="characteristics-of-a-good-learning-outcome" class="section level3 hasAnchor" number="3.3.4">
+<h3><span class="header-section-number">3.3.4</span> Characteristics of a good learning outcome<a href="chapter-3.-course-design.html#characteristics-of-a-good-learning-outcome" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The mnemonic <strong>SMART (TT)</strong> can be used in determining the quality of the learning outcome as adapted from Blanchard, K., &amp; Johnson, S. (1981):</p>
+<ul>
+<li><strong>Speak to the learner</strong> – learning outcome should address what the learner will know or be able to do at the completion of the course;</li>
+<li><strong>Measurable</strong> – learning outcome must indicate how the learning will be assessed;</li>
+<li><strong>Applicable</strong> – learning outcome should emphasise ways in which the learner is likely to use the knowledge or skills gained;</li>
+<li><strong>Realistic</strong> – all learners who complete the activity or course satisfactorily should be able to demonstrate the knowledge or skills addressed in the outcome;</li>
+<li><strong>Time-bound</strong> – the learning outcome should set a deadline by which knowledge or skills should be acquired;</li>
+<li><strong>Transparent</strong> – should be easily understood by the learner; and</li>
+<li><strong>Transferable</strong> – should address the knowledge and skills that will be used by the learner in the wide variety of contexts.</li>
+</ul>
+<p>The following also indicates the qualities of a good learning outcome:</p>
+<ul>
+<li><strong>Specific</strong> – the learning outcome is clear on what is the actual performance to be expected; learning outcome does not combine two performances;</li>
+<li><strong>Realistic</strong> – not aspirational; and</li>
+<li>Indicates <strong>useful</strong> mode of assessment.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Arranged from highest to lowest.<a href="chapter-3.-course-design.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chapter-2.-course-design-and-development-process.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chapter-4.-course-development.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
